@@ -1,0 +1,27 @@
+// Write your code here...
+function findHousing (housingToFind, housingList) {
+
+let i = 0
+
+while (housingToFind != housingList[i]) {
+i = i + 1
+if (i == housingList.length + 1) { return null }
+}
+console.log (i)
+if (housingToFind == housingList[i]) {
+return [i, housingToFind]
+console.log ("ça match")
+} else {
+return null
+console.log ("ça match pas")
+}
+}
+
+var housingToFind = "House"
+let housingList = ["Flat", "House", "Hut", "House", "Igloo"]
+
+//Use console.log to debug you're code ! It is very useful
+console.log("I'm debugging")
+
+//Some code to display your function output: (you must modify it but /!\ do not deliver it /!\ ). Only deliver your function
+ displayResult(findHousing(housingToFind,housingList))
