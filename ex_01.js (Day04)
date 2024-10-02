@@ -1,0 +1,7 @@
+function getAngryDog(numberOfWoofs) {
+var text = ""
+for (let i = 0; i != numberOfWoofs; i = i + 1) {
+text = text + "woof" ;
+}
+return text;
+}
