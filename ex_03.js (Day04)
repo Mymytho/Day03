@@ -1,0 +1,19 @@
+let peopleAtBusStops = [1,2,3,4,5,6,7]
+var busSeats = 18
+
+var stop = 0
+
+var placesdispo = 18
+
+
+function fillBus (peopleAtBusStops, busSeats) {
+
+  for (let i = 0 ; i != peopleAtBusStops.length ; i = i + 1) {
+  	if (placesdispo <= 0) { return "Arret " + stop + " : bus complet" }
+  stop = stop + 1 ;
+  placesdispo = placesdispo - peopleAtBusStops[i];
+  console.log ("Arret " + stop + " / il reste " + placesdispo + " place(s) disponible(s)" )
+  }
+}
+
+console.log(fillBus(peopleAtBusStops, busSeats))
